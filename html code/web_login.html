@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: url('burger1.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+        .navbar {
+            background-color: rgba(0,0,0,0.7);
+        }
+        .content-box {
+            background-color: rgba(0,0,0,0.6);
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .login-box {
+            background-color: rgba(255,255,255,0.9);
+            color: black;
+            padding: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">HOME</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">TYPE A TEXT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Left Content -->
+            <div class="col-md-6">
+                <div class="content-box">
+                    <h2 style="color:orange;">Web</h2>
+                    <h3>web design</h3>
+                    <p>Lorem ipsum dolor sit amet<br>
+                       Lorem ipsum dolor, sit amet consectetur adipiscing elit.<br>
+                       Necessitatibus earum aspernatur odit illum ullam reprehenderit provident at totam ipsa facilis!
+                    </p>
+                    <button class="btn btn-warning">JOIN</button>
+                </div>
+            </div>
+
+            <!-- Right Login Form -->
+            <div class="col-md-6">
+                <div class="login-box">
+                    <h3 class="text-center">Login</h3>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Enter your name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Enter your password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+    form {
+      max-width: 400px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .radio-group {
+      margin-top: 5px;
+    }
+    .radio-group input {
+      margin-right: 5px;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px;
+      width: 100%;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <form action="">
+    <h1>Booking Form</h1>
+
+    <!-- Date and Time -->
+    <label for="day">Day</label>
+    <input type="number" id="day" name="day" min="1" max="31">
+
+    <label for="month">Month</label>
+    <select id="month" name="month">
+      <option value="">Select Month</option>
+      <option value="January">January</option>
+      <option value="February">February</option>
+      <option value="March">March</option>
+      <option value="April">April</option>
+      <option value="May">May</option>
+      <option value="June">June</option>
+      <option value="July">July</option>
+      <option value="August">August</option>
+      <option value="September">September</option>
+      <option value="October">October</option>
+      <option value="November">November</option>
+      <option value="December">December</option>
+    </select>
+
+    <label for="year">Year</label>
+    <input type="number" id="year" name="year" min="2024" max="2030">
+
+    <label for="time">Time</label>
+    <input type="time" id="time" name="time">
+
+    <!-- Seating Preference -->
+    <label>Seating preference</label>
+    <div class="radio-group">
+      <input type="radio" id="indoor" name="seating" value="Indoor">
+      <label for="indoor">Indoor</label><br>
+      <input type="radio" id="outdoor" name="seating" value="Outdoor">
+      <label for="outdoor">Outdoor</label>
+    </div>
+
+    <!-- Additional Requests -->
+    <label for="requests">Additional requests</label>
+    <textarea id="requests" name="requests" rows="3"></textarea>
+
+    <!-- Newsletter -->
+    <div>
+      <input type="checkbox" id="newsletter" name="newsletter">
+      <label for="newsletter">Yes, subscribe me to your newsletter.</label>
+    </div>
+
+    <!-- Submit -->
+    <button type="submit">Request booking</button>
+  </form>
+</body>
+</html>
